@@ -47,7 +47,7 @@ async function fetchUser(e) {
   repos.forEach((repo, index) => {
     if (index > 3) return;
     html += `<div class="border-gray-300 border rounded p-1 px-6 m-3 ml-0 mr-0 flex flex-wrap">
-  <p class="m-auto mr-2 ml-2 w-full sm:w-auto">${repo.name}</p>
+  <p class="m-auto mr-2 ml-2 w-full sm:w-64">${repo.name}</p>
   <div class="flex flex-auto h-14">
     <div class="box-info bg-blue-400 text-xs">Share: ${repo.stargazers_count}</div>
     <div class="box-info bg-green-400 text-xs">Watchers: ${repo.watchers}</div>
